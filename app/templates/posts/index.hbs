@@ -1,0 +1,9 @@
+{{outlet}}
+
+{{#each posts as |post|}}
+  <div class="post">
+    <h3 class="post__title">{{post.title}}</h3>
+    <p class="post__body">{{post.body}}</p>
+    <em>By: {{post.user.name}}</em>
+  </div>
+{{/each}}
